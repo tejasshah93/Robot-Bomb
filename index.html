@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+               "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>ASSIGNMENT-4</title>
+<meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1"/>
+<meta name="title" content="ASSIGNMENT-4"/>
+<meta name="generator" content="Org-mode"/>
+<meta name="generated" content="2012-03-28T19:51+0530"/>
+<meta name="author" content="Tejas Shah (201102073)"/>
+<meta name="description" content=""/>
+<meta name="keywords" content=""/>
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  html { font-family: Times, serif; font-size: 12pt; }
+  .title  { text-align: center; }
+  .todo   { color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #add8e6; font-weight:normal }
+  .target { }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .right  {margin-left:auto; margin-right:0px;  text-align:right;}
+  .left   {margin-left:0px;  margin-right:auto; text-align:left;}
+  .center {margin-left:auto; margin-right:auto; text-align:center;}
+  p.verse { margin-left: 3% }
+  pre {
+	border: 1pt solid #AEBDCC;
+	background-color: #F3F5F7;
+	padding: 5pt;
+	font-family: courier, monospace;
+        font-size: 90%;
+        overflow:auto;
+  }
+  table { border-collapse: collapse; }
+  td, th { vertical-align: top;  }
+  th.right  { text-align:center;  }
+  th.left   { text-align:center;   }
+  th.center { text-align:center; }
+  td.right  { text-align:right;  }
+  td.left   { text-align:left;   }
+  td.center { text-align:center; }
+  dt { font-weight: bold; }
+  div.figure { padding: 0.5em; }
+  div.figure p { text-align: center; }
+  div.inlinetask {
+    padding:10px;
+    border:2px solid gray;
+    margin:10px;
+    background: #ffffcc;
+  }
+  textarea { overflow-x: auto; }
+  .linenr { font-size:smaller }
+  .code-highlighted {background-color:#ffff00;}
+  .org-info-js_info-navigation { border-style:none; }
+  #org-info-js_console-label { font-size:10px; font-weight:bold;
+                               white-space:nowrap; }
+  .org-info-js_search-highlight {background-color:#ffff00; color:#000000;
+                                 font-weight:bold; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+
+</head>
+<body>
+
+<div id="preamble">
+
+</div>
+
+<div id="content">
+<h1 class="title">ASSIGNMENT-4</h1>
+
+
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#sec-1">1 THE GAME</a>
+<ul>
+<li><a href="#sec-1-1">1.1 About the GAME</a></li>
+<li><a href="#sec-1-2">1.2 Code..Organisation</a></li>
+<li><a href="#sec-1-3">1.3 About the CLASSES</a>
+<ul>
+<li><a href="#sec-1-3-1">1.3.1 Class Play:</a></li>
+<li><a href="#sec-1-3-2">1.3.2 Class for exception</a></li>
+</ul>
+</li>
+<li><a href="#sec-1-4">1.4 Benifits of CLASSES</a></li>
+<li><a href="#sec-1-5">1.5 MISC</a></li>
+<li><a href="#sec-1-6">1.6 EXTRA FEATURES</a></li>
+<li><a href="#sec-1-7">1.7 ScreenShots</a>
+<ul>
+<li><a href="#sec-1-7-1">1.7.1 Image1</a></li>
+<li><a href="#sec-1-7-2">1.7.2 Image2</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> THE GAME</h2>
+<div class="outline-text-2" id="text-1">
+
+
+
+</div>
+
+<div id="outline-container-1-1" class="outline-3">
+<h3 id="sec-1-1"><span class="section-number-3">1.1</span> About the GAME</h3>
+<div class="outline-text-3" id="text-1-1">
+
+<p>   The game has a welcome screen which implies the objective of the game through an <code>asciiart</code>,after which a menu is brought in <br/>
+   which provides the user with options of Quick Play, Custom Play,Help and Quit..
+   In Quick Play mode: The user is given a direct experience of moderate screen size,and a selected level to play for.
+   In Custom Play mode: The user can select different options for screen size,grid size of robot,no.of decodes and level.
+   In Help: The user is given instructions regarding controls of the game and hints.
+   By selecting Quit,the game exits.
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-1-2" class="outline-3">
+<h3 id="sec-1-2"><span class="section-number-3">1.2</span> Code..Organisation</h3>
+<div class="outline-text-3" id="text-1-2">
+
+<p>   The code has been written in two parts classes and the main loop.<br/>
+   The classes have been used to initiate various screens which appear during the game.<br/>
+   There are 4 modules mainly for display of asciiart,menu,options and levels.
+</p>
+
+
+</div>
+
+</div>
+
+<div id="outline-container-1-3" class="outline-3">
+<h3 id="sec-1-3"><span class="section-number-3">1.3</span> About the CLASSES</h3>
+<div class="outline-text-3" id="text-1-3">
+
+
+</div>
+
+<div id="outline-container-1-3-1" class="outline-4">
+<h4 id="sec-1-3-1"><span class="section-number-4">1.3.1</span> Class Play:</h4>
+<div class="outline-text-4" id="text-1-3-1">
+
+<p>     This class has functions:-<br/>
+     main    : calls other functions and initiates the game<br/>
+     my      : checks the basic condition for <br/>
+     menu    : creates the menu as required
+     load    : for the loading screen
+     quick   : for quick play
+     cusplay : for custom play
+     helpy   : for help menu
+     done    : for the last window giving score
+     nex     : for additional bullets in the game
+     levels  : for 1,2,3 levels
+     go      : for welcome screen
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-1-3-2" class="outline-4">
+<h4 id="sec-1-3-2"><span class="section-number-4">1.3.2</span> Class for exception</h4>
+<div class="outline-text-4" id="text-1-3-2">
+
+<p>     It raises the exception on wrong input.
+</p>
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-1-4" class="outline-3">
+<h3 id="sec-1-4"><span class="section-number-3">1.4</span> Benifits of CLASSES</h3>
+<div class="outline-text-3" id="text-1-4">
+
+<p>   Classes helped me in the re-usability of the functions. One class like Window helped in generation of all the <br/>
+   screens through out the game.
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-1-5" class="outline-3">
+<h3 id="sec-1-5"><span class="section-number-3">1.5</span> MISC</h3>
+<div class="outline-text-3" id="text-1-5">
+
+<p>   User has to basically collect all the decodes in order to diffuse the bomb. There are three levels.
+   In level1 : Obstructions are made using walls
+   In level2 : 2 Guns are shown whose bullets travel in vertical direction
+   In level3 : 3 Guns and obstructions,bullets travel in vertical,diagonal directions with some 'intelligence'
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-1-6" class="outline-3">
+<h3 id="sec-1-6"><span class="section-number-3">1.6</span> EXTRA FEATURES</h3>
+<div class="outline-text-3" id="text-1-6">
+
+<p>   Features like colors,asciiart,menu,flashusing different windows,check correctness of input,etc
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-1-7" class="outline-3">
+<h3 id="sec-1-7"><span class="section-number-3">1.7</span> ScreenShots</h3>
+<div class="outline-text-3" id="text-1-7">
+
+
+</div>
+
+<div id="outline-container-1-7-1" class="outline-4">
+<h4 id="sec-1-7-1"><span class="section-number-4">1.7.1</span> Image1</h4>
+<div class="outline-text-4" id="text-1-7-1">
+
+<p>     <img src="./image1.png" title="Action!" align="center" width="1000" alt="./image1.png" />
+     <br/>
+</p></div>
+
+</div>
+
+<div id="outline-container-1-7-2" class="outline-4">
+<h4 id="sec-1-7-2"><span class="section-number-4">1.7.2</span> Image2</h4>
+<div class="outline-text-4" id="text-1-7-2">
+
+<p>     <img src="./image2.png" title="Action" align="center" width="1000" alt="./image2.png" />
+</p></div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="postamble">
+<p class="date">Date: 2012-03-28T19:51+0530</p>
+<p class="author">Author: Tejas Shah (201102073)</p>
+<p class="creator">Org version 7.8.06 with Emacs version 23</p>
+<a href="http://validator.w3.org/check?uri=referer">Validate XHTML 1.0</a>
+
+</div>
+</body>
+</html>

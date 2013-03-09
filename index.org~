@@ -1,0 +1,59 @@
+#+TITLE: ASSIGNMENT-4
+#+AUTHOR: Tejas Shah (201102073)
+#+STARTUP: hidestars
+#+STARTUP: overview
+
+* THE GAME
+
+** About the GAME
+   The game has a welcome screen which implies the objective of the game through an =asciiart=,after which a menu is brought in \\ 
+   which provides the user with options of Quick Play, Custom Play,Help and Quit..
+   In Quick Play mode: The user is given a direct experience of moderate screen size,and a selected level to play for.
+   In Custom Play mode: The user can select different options for screen size,grid size of robot,no.of decodes and level.
+   In Help: The user is given instructions regarding controls of the game and hints.
+   By selecting Quit,the game exits.
+
+** Code..Organisation
+   The code has been written in two parts classes and the main loop.\\
+   The classes have been used to initiate various screens which appear during the game.\\
+   There are 4 modules mainly for display of asciiart,menu,options and levels.
+   
+
+
+** About the CLASSES
+*** Class Play: 
+     This class has functions:-\\
+     main    : calls other functions and initiates the game\\
+     my      : checks the basic condition for \\
+     menu    : creates the menu as required
+     load    : for the loading screen
+     quick   : for quick play
+     cusplay : for custom play
+     helpy   : for help menu
+     done    : for the last window giving score
+     nex     : for additional bullets in the game
+     levels  : for 1,2,3 levels
+     go      : for welcome screen
+
+
+** Benifits of CLASSES
+   Classes helped me in the re-usability of the functions. One class like Window helped in generation of all the \\
+   screens through out the game.
+   
+** MISC
+   User has to basically collect all the decodes in order to diffuse the bomb. There are three levels.
+   In level1 : Obstructions are made using walls
+   In level2 : 2 Guns are shown whose bullets travel in vertical direction
+   In level3 : 3 Guns and obstructions,bullets travel in vertical,diagonal directions with some 'intelligence'
+
+** EXTRA FEATURES
+   Features like colors,asciiart,menu,flashusing different windows,check correctness of input,etc
+
+** ScreenShots
+*** Image1
+   #+ATTR_HTML: title="Action!" align="center" width="1000"
+     [[./image1.png]]
+     \\
+*** Image2 
+   #+ATTR_HTML: title="Action" align="center" width="1000"
+     [[./image2.png]]
